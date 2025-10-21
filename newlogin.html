@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Wave - Register</title>
+  <link rel="stylesheet" href="newlogin.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Music Wave</h1>
+      <div class="Logo"><img src="logo.png" alt="Music Wave Logo"></div>
+    </div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="login-form">
+      <h2>Register</h2>
+      <form action="#" onsubmit="return login()">
+        <input type="text" id="username" placeholder="Username (e.g. user123 - for demo)" required>
+        <input type="password" id="password" placeholder="Password (e.g. password123 - for demo)" required>
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;2024 Music Wave. All rights reserved by Somnath.</p>
+  </footer>
+  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Hardcoded credentials for demo
+      const validUsername = "user123";
+      const validPassword = "password123";
+
+      if (username === validUsername && password === validPassword) {
+        alert("Login successful!");
+        window.location.href = "demo.html";
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
